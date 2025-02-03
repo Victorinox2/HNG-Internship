@@ -1,7 +1,7 @@
 function updateUTCTime() {
   const utcTimeElement = document.getElementById("utcTime");
-  const now = new Date();
-  utcTimeElement.textContent = now.toISOString().split(".")[0] + " UTC";
+  const current = new Date();
+  utcTimeElement.textContent = current.toISOString().split(".")[0] + " UTC";
 }
 
 updateUTCTime();
